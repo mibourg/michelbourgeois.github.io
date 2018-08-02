@@ -1,0 +1,188 @@
+li, h1, h2, h3, p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+#navbar>ul {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+#navbar>ul>li {
+    text-align: center;
+    color: white;
+    padding: 1% 1% 1% 1%;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    list-style-type: none;
+}
+
+#navbar>ul>li>a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar>ul>li>a:hover {
+    color: #e6e6e6;
+}
+
+#navbar {
+    background-color: #003d34;
+    position: fixed;
+    height: 5%;
+    width: 100%;
+}
+
+#welcome-section {
+    background-color: #007939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#welcome-section-text {
+    text-align: center;
+}
+
+h1, h2 {
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+#projects {
+    padding-bottom: 5%;
+    text-align: center;
+    padding-top: 5%;
+    height: auto;
+}
+
+#projects>h2 {
+    font-size: 2.5em;
+    margin-top: 0px;
+    text-align: center;
+    color: #00787a;
+}
+
+#project-tiles {
+    display: inline-block;
+    width: 90%;
+    white-space: wrap;
+    margin: 5% 5% 5% 5%;
+    text-align: center;
+}
+
+.project-tile {
+    margin: 5% 2.5% 5% 2.5%;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #00787a;
+    text-decoration: none;
+}
+
+#image-div {
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+}
+
+.project-picture {
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+}
+
+.project-tile>h3 {
+    margin: 0px;
+    border-top: 2px solid #00787a;
+    color: #00787a;
+    margin: auto;
+}
+
+#profile-link-div {
+    text-align: center;
+}
+
+#profile-link {
+    font-family: 'PT Sans', sans-serif;
+    padding: 1%;
+    text-decoration: none;
+    border: 2px solid #00787a;
+    color: #00787a;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#profile-link:hover {
+    background-color: #94ebd8;
+    border-color: #94ebd8;
+    color: #003d34;
+}
+
+#contact-me {
+    background-color: #00787a;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: auto;
+    text-align: center;
+}
+
+#contact-me>a {
+    text-decoration: none;
+}
+
+#contact-me>h2 {
+    
+    font-size: 2.5em;
+}
+
+#facebook-icon, #email-icon {
+    margin: 5% 1% 0% 1%;
+    width: 128px;
+    height: 128px;
+}
+
+footer {
+    position: relative;
+    height: 8vh;
+    background-color: #003d34;
+}
+
+footer>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: 16vh;
+    }
+    footer>p {
+        text-align: center;
+    }
+}
