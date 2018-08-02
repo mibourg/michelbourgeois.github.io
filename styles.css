@@ -10,7 +10,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 0px;
     margin: 0px;
     height: 100%;
@@ -80,6 +80,7 @@ h2 {
     margin-top: 0px;
     text-align: center;
     color: #00787a;
+    text-shadow: none;
 }
 
 #project-tiles {
@@ -97,12 +98,46 @@ h2 {
     text-align: center;
     border: 2px solid #00787a;
     text-decoration: none;
+    animation-name: unhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.project-tile:hover {
+  animation-name: hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.project-tile:active {
+    animation-name: unhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+@keyframes hover {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+
+@keyframes unhover {
+  0% {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  100% {
+    box-shadow: none;
+  }
 }
 
 #image-div {
     display: inline-block;
-    height: 0px;
-    width: 0px;
 }
 
 .project-picture {
@@ -128,13 +163,22 @@ h2 {
     text-decoration: none;
     border: 2px solid #00787a;
     color: #00787a;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #profile-link:hover {
     background-color: #94ebd8;
     border-color: #94ebd8;
     color: #003d34;
+}
+
+#profile-link:active {
+    background-color: hsl(166.9, 68.5%, 65.1%);
+    box-shadow: none;
+    animation-name: unhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.25,.8,.25,1);
 }
 
 #contact-me {
@@ -155,9 +199,28 @@ h2 {
 }
 
 #facebook-icon, #email-icon {
+    border-radius: 50%;
     margin: 5% 1% 0% 1%;
     width: 128px;
     height: 128px;
+    animation-name: unhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+#facebook-icon:hover, #email-icon:hover {
+    animation-name: hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+#facebook-icon:active, #email-icon:active {
+    animation-name: unhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.25,.8,.25,1);
 }
 
 footer {
